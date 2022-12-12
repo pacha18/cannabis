@@ -1,9 +1,74 @@
-{
-    "llave1": "valor1",
-    "llave2": "valor2",
-    "llave3": "valor3",
-    "llave4": 7,
-    "llave5": null,
-    "favAmigos": ["Kolade", "Nithya", "Dammy", "Jack"],
-    "favJugadores": {"uno": "Kante", "dos": "Hazard", "tres": "Didier"}
+[
+  {
+    "id": 1,
+    "name": "sustrado de raiz",
+    "brand": "Raíces",
+    "price": 1299,
+    "description": "sustrado de raiz para tener un florecimineto mas rapido y abundante!!",
+    "image": "raices.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Gorra",
+    "brand": "KYA",
+    "price": 899,
+    "description": "Gorra KYA color roja",
+    "image": "gorra1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Gorra",
+    "brand": "KYA",
+    "price": 899,
+    "description": "Gorra KYA camuflada",
+    "image": "gorra2.jpg"  
+  },
+  {
+    "id": 4,
+    "name": "pica pica",
+    "brand": "cannabis libre",
+    "price": 990,
+    "description": "Pica pica con motivo de pokemon!!",
+    "image": "picapica-pokemon.jpg"   
+  },
+  {
+    "id": 5,
+    "name": "pica pica",
+    "brand": "cannabis libre",
+    "price": 1290,
+    "description": "pica pica de metal inoxidable motivos varios",
+    "image": "picapica-metal.jpg"   
+  },
+  {
+    "id": 6,
+    "name": "Pipa",
+    "brand": "Artesanal",
+    "price": 299,
+    "description": "pipa de madera artesanales",
+    "image": "pipa1.jpg"    
+  },
+  {
+    "id": 7,
+    "name": "Pipa",
+    "brand": "Artesanal",
+    "price": 799,
+    "description": "pipa de manera artesanales",
+    "image": "pipa2.jpg"   
+  },
+  {
+    "id": 8,
+    "name": "Remera",
+    "brand": "KYA",
+    "price":1499,
+    "description": "Remeras marca KYA diferentes colores",
+    "image": "remera.jpg"   
+  },
+  {
+    "id": 9,
+    "name": "Vaper",
+    "brand": "Gpen",
+    "price": 16990,
+    "description": "Vaper Gpen con 2 resistencias de regalo",
+    "image": "vaper.jpg" 
   }
+]

@@ -6,10 +6,11 @@ const productsJson = fs.readFileSync(pathJson,'utf-8');
 const products = JSON.parse(productsJson);
 
 let productsController = {
-    home: (req,res)=>{
-        res.render('home')
+    products: (req,res)=>{
+        res.render('products',{productos:products})
     },
     detail: (req,res)=>{
+        req.params.id
         res.render('detail')
     }
 }

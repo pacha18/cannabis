@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found</title>
-</head>
+<!--Head-->
+<%- include("partials/head") %>
 <body>
-    <h1>Error 404</h1>
-    <h2>La pagina a la que quiera acceder no existe</h2>
-    <a href="/products">Volver</a>
+    <!--Header-->
+    <%- include("partials/header") %>
+    <h1><center>Eror 404</center> </h1>
+    <div class="e404">
+    <h2>Parece que la Pagina a la que quiere acceder no existe!</h2>
+    <a href="/">Volver</a>
+    </div>
+    
+    <!--Footer-->
+    <%- include("partials/footer") %>
 </body>
 </html>

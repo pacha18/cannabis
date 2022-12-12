@@ -1,0 +1,26 @@
+<!--Head-->
+<%- include("partials/head") %>
+<body>
+    <!--Header-->
+    <%- include("partials/header") %>
+<h1>Productos</h1>
+<section class="contenedor">
+<section class="caja">
+        
+    <% productos.forEach(element => {%>
+        <div> <img src="/img/productos/<%=element.image%>" alt="" title="">
+        
+            <h3><%=element.name%></h3>
+            <p>Marca: <%=element.brand%> <br>
+                Precio $<%=element.price%><br>
+            <a href="/products/detail/<%= element.id%>" class="masDetalles">Mas detalles</a></p>
+            
+        </div>
+    <%});  %> 
+    
+</section>
+</section>
+<!--Footer-->
+<%- include("partials/footer") %>
+</body>
+</html>

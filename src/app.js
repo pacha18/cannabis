@@ -12,8 +12,6 @@ app.use(express.static(path.resolve(__dirname,'../public')));
 const main = require('./routes/main');
 app.use('/',main);
 
-const users= require('./routes/users');
-app.use('/users',users);
 
 
 const products= require('./routes/products');
