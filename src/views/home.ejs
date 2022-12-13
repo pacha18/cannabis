@@ -9,18 +9,23 @@
         <h2 style="margin-left: 2em;">Lo mas Visitado!!</h2>
        <div class="masVisitados">
        
-            <%for (let index = 0; index < 5; index++) {
+            <%for (let index = 0; index < 4; index++) {
                 let random = Math.random();
-                random = random * 10 - 1;
+                random = random * 13 - 1;
                 random = Math.trunc(random);
                 
-                %> <img src="/img/productos/<%=productos[random].image%>" alt="">
-                    
+                %> <a href="/products/detail/<%=productos[random].id%>" class="visitadouni"><div class="cajaVisitados"><img src="/img/productos/<%=productos[random].image%>" alt="">
+                    <h2><%=productos[random].name%></h2></div></a>
                 <%
                 
             } 
             
             %>
+               
+            </div>
+            <div class="masVisitados">
+            <div><span class="icon-credit-card"></span> <h2>Hasta 12 Cuotas con tu tarjeta de credito</h2></div>
+            <div><span class="icon-truck"></span> <h2>Envio Gratis desde $15000</h2></div> 
        </div>
     </div>
 </section>

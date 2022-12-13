@@ -107,22 +107,44 @@ header a:hover{
 
 /*Lo mAs visitados*/
 .masVisitados {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 2em;
-    background-color:#333;
+    background-color: rgba(56, 56, 56, 0.7);
     padding: 4em;
     justify-content: center;
+    width: 70%;
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+left: 10%;
+    
+}
+.cajaVisitados{
+    margin: 0px 1em;
 }
 .masVisitados img {
-    margin-left: 4em;
+    margin: 2em;
     width: 100px;
     height: 100px;
     border-radius: 15px 15px 15px 15px;
 -moz-border-radius: 15px 15px 15px 15px;
 -webkit-border-radius: 15px 15px 15px 15px;
 border: 0px solid #000000;
+
+}
+.masVisitados h2{
+    text-align: center;
 }
 
+.masVisitados span{
+    margin-left: 50%;
+    font-size: 4em;
+}
+.visitadouni:hover{
+    text-decoration: underline;
+}
 /*Estilos Sobre mi*/
 .sobre-mi{
     margin: 0em 2em;
@@ -139,7 +161,7 @@ border: 0px solid #000000;
     color: #333;
 }
 .sobre-mi p{
-    font-size: 25px;
+    font-size: 15px;
 }
 .sobre-mi img{
     width: 15em;
