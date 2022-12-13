@@ -1,12 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
-</head>
+<!--Head-->
+<%- include("partials/head") %>
 <body>
-    
+    <!--Header-->
+    <%- include("partials/header") %>
+    <h1>Dettale del Producto: <%=producto.name%></h1>
+<section class="detalle">
+    <div class="detalleDerecha">
+    <img src="/img/productos/<%=producto.image%>" alt="">
+    <h2>Marca: <%=producto.brand%></h2>
+    <h2>Descripcion</h2>    
+    <p><%=producto.description%></p>
+    </div>
+    <div class="detalleIzquierda">
+        <h2>Precio:</h2>
+        <h2 class="precio">$<%= producto.price%> </h2>
+        <br>
+        <a href="#">Agregar Al Carrito</a>
+        <a href="/products/edit/<%= producto.id%>">Editar Producto</a>
+    </div>
+</section>
+<!--Footer-->
+<%- include("partials/footer") %>
 </body>
 </html>

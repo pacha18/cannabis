@@ -6,8 +6,22 @@
 <section>
 
     <div class="fondo">
-        
+        <h2 style="margin-left: 2em;">Lo mas Visitado!!</h2>
+       <div class="masVisitados">
        
+            <%for (let index = 0; index < 5; index++) {
+                let random = Math.random();
+                random = random * 10 - 1;
+                random = Math.trunc(random);
+                
+                %> <img src="/img/productos/<%=productos[random].image%>" alt="">
+                    
+                <%
+                
+            } 
+            
+            %>
+       </div>
     </div>
 </section>
 <!--Footer-->

@@ -11,9 +11,11 @@
         <div> <img src="/img/productos/<%=element.image%>" alt="" title="">
         
             <h3><%=element.name%></h3>
-            <p>Marca: <%=element.brand%> <br>
-                Precio $<%=element.price%><br>
-            <a href="/products/detail/<%= element.id%>" class="masDetalles">Mas detalles</a></p>
+            <p>
+                $<%=element.price%><br>
+            <a href="/products/detail/<%= element.id%>" class="masDetalles">Mas detalles</a><br><br>
+            <a href="#" class="carrito">Agregar al Carrito</a>
+        </p>
             
         </div>
     <%});  %> 

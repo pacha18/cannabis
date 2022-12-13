@@ -26,7 +26,7 @@ border: 0px solid #000000;
 body{
     position: relative;
     min-height: 100vh;
-    padding-bottom: 4em;
+    padding-bottom: 10em;
 }
 /*Secciones en General*/
 .contenedor{
@@ -48,23 +48,32 @@ header{
 .logo{
     display: flex;
     margin-left: 2%;
-    width: auto;
+    width: 40%;
     
 }
 .logo img{
     width: 150px;
+    height: auto;
 }
-header ul{
+
+.menu{
     margin-top: 4em;
     list-style: none;
     
 }
-header ul li{
+.menu li{
     float: right;
-    font-size: 18px;  
+    font-size: 15px;  
+}
+.sesion{
+    list-style: none;
+    font-size: 11px;
+}
+.sesion li{
+    float: right;
 }
 header nav{
-    width: 80%;
+    width: 60%;
     margin:0 2%;
    text-align: right;
 }
@@ -76,6 +85,14 @@ header a:hover{
     text-decoration: underline;
     color: #555;
 }
+.tituloLogo{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-shadow: 2px 2px #379237;
+    margin-top: 1em;
+}
 /*Estilos de inicio*/
 .fondo{
     position: relative;
@@ -86,19 +103,25 @@ header a:hover{
     width: 100%;
     height: 60em;
 }
-.fake{
-    position: absolute;
-    right: 30%;
-    top: 50%;
-    animation:tada;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-.fake img{
-    width:18em;
-}
 
 
+/*Lo mAs visitados*/
+.masVisitados {
+    display: flex;
+    margin-top: 2em;
+    background-color:#333;
+    padding: 4em;
+    justify-content: center;
+}
+.masVisitados img {
+    margin-left: 4em;
+    width: 100px;
+    height: 100px;
+    border-radius: 15px 15px 15px 15px;
+-moz-border-radius: 15px 15px 15px 15px;
+-webkit-border-radius: 15px 15px 15px 15px;
+border: 0px solid #000000;
+}
 
 /*Estilos Sobre mi*/
 .sobre-mi{
@@ -180,6 +203,9 @@ box-shadow: 10px 10px 90px 35px rgba(217,95,95,0.6);
 .formulario button:hover{
     background-color: #379237;
 }
+.formulario h3{
+    margin-left: 20px;
+}
 
 /*Estilos del footer*/
 footer{
@@ -193,8 +219,23 @@ footer{
 
 }
 footer p{
-    font-size: 1.5em;
+    font-size: 1em;
     color: white;
+}
+.social ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.social ul li{
+    margin: 0px 1em;
+}
+.social a{
+    font-size: 3em;
+    transition: 0.5s;
+}
+.social span:hover{
+    color: #333;
 }
 /*Estilos de las cajas principales*/
 .caja{
@@ -244,6 +285,7 @@ box-shadow: 7px 7px 16px 0px rgba(235,211,54,1);
 box-shadow: 7px 7px 16px 0px rgba(235,211,54,1);
 }
 .caja p{
+    text-align: center;
     padding: 1em 1em 1em 1em;
 background-color: #333;
 color: white;
@@ -260,6 +302,19 @@ border-radius: 0px 0px 15px 15px;
 .masDetalles:hover{
     text-decoration: underline;
 }
+.carrito{
+    margin-top: 5px;
+    background-color: #54B435;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    transition: 0.5s;
+}
+.carrito:hover{
+    background-color: #F0FF42;
+    color: #333;
+}
 .e404{
     background-color: #54B435;
     text-align: center;
@@ -267,6 +322,46 @@ border-radius: 0px 0px 15px 15px;
 .e404 a{
     color: #333;
     font-size: 3em;
+}
+/*clases de detalles*/
+.detalle{
+    display: flex;
+    justify-content: space-around;
+}
+.detalleDerecha{
+    background-color: #379237;
+    padding: 1em;
+}
+.detalleDerecha img{
+    width: 400px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+
+}
+.detalleIzquierda h2{
+    color: #333;
+}
+.precio{
+    color: #379237 !important;
+}
+.detalleIzquierda a{
+    background-color: #379237;
+    padding: 5px 10px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    transition: 0.5s;
+}
+.detalleIzquierda a:hover{
+    background-color: #333;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+     justify-content: center;
+    
 }
 @media (max-width:480px) {
     .listaord2{

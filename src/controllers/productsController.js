@@ -10,8 +10,23 @@ let productsController = {
         res.render('products',{productos:products})
     },
     detail: (req,res)=>{
-        req.params.id
-        res.render('detail')
+        let product = products.find(product=>{
+            return product.id == req.params.id;
+        })
+        res.render('detail',{producto:product});
+    },
+    edit: (req,res)=>{
+        let product = products.find(product=>{
+            return product.id == req.params.id;
+        })
+        res.render('edit',{producto:product});
+    },
+    add: (req,res)=>{
+        producto=products
+        producto.forEach(element => {
+            id=element.id;
+        });
+        res.render('add',{id})
     }
 }
 

@@ -1,0 +1,28 @@
+<!--Head-->
+<%- include("partials/head") %>
+<body>
+    <!--Header-->
+    <%- include("partials/header") %>
+<section>
+
+    <h1>Agregar Producto</h1>
+    <div class="form">
+    <form action="" class="formulario">
+        <ul>
+            <li><input type="text" required placeholder="id" value="<%= id+1%>" readonly></li>
+            <li><input type="text" required placeholder="Nombre del Producto"></li>
+            <li><input type="text" required placeholder="Marca"></li>
+            <li><input type="text" required placeholder="Precio"></li>
+            <li><textarea name="" id="" cols="30" rows="10" placeholder="Descripcion"></textarea></li>
+            <h3 style="color: azure;">subir imagen</h3>
+            <li><input type="file" required name="Subir imagen"></li>
+            <li><button type="submit" value="Submit">Agregar Producto</button></li>
+        </ul>
+    </form>
+       
+    </div>
+</section>
+<!--Footer-->
+<%- include("partials/footer") %>
+</body>
+</html>
