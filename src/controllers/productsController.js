@@ -13,13 +13,24 @@ let productsController = {
         let product = products.find(product=>{
             return product.id == req.params.id;
         })
-        res.render('detail',{producto:product});
+        if(product==undefined){
+            res.render("404");
+        }else{
+            res.render('detail',{producto:product});
+        }
+       
+        
     },
     edit: (req,res)=>{
         let product = products.find(product=>{
             return product.id == req.params.id;
         })
-        res.render('edit',{producto:product});
+        if(product==undefined){
+            res.render('404')
+        }else{
+            res.render('edit',{producto:product});
+        }
+        
     },
     add: (req,res)=>{
         producto=products
@@ -27,6 +38,16 @@ let productsController = {
             id=element.id;
         });
         res.render('add',{id})
+    },
+    filter:(req,res)=>{
+        let product = products.find(element=>{
+            return element.id == req.params.name;
+        })
+        if(product==undefined){
+            res.render('404')
+        }else{
+            res.render('products',{producto:product});
+        }
     }
 }
 
