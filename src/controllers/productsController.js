@@ -7,7 +7,7 @@ const products = JSON.parse(productsJson);
 
 let productsController = {
     products: (req,res)=>{
-        res.render('products',{productos:products})
+        res.render('products/products',{productos:products})
     },
     detail: (req,res)=>{
         let product = products.find(product=>{
@@ -16,7 +16,7 @@ let productsController = {
         if(product==undefined){
             res.render("404");
         }else{
-            res.render('detail',{producto:product});
+            res.render('products/detail',{producto:product});
         }
        
         
@@ -28,7 +28,7 @@ let productsController = {
         if(product==undefined){
             res.render('404')
         }else{
-            res.render('edit',{producto:product});
+            res.render('products/edit',{producto:product});
         }
         
     },
@@ -37,17 +37,13 @@ let productsController = {
         producto.forEach(element => {
             id=element.id;
         });
-        res.render('add',{id})
+        res.render('products/add',{id})
     },
     filter:(req,res)=>{
-        let product = products.find(element=>{
-            return element.id == req.params.name;
-        })
-        if(product==undefined){
-            res.render('404')
-        }else{
-            res.render('products',{producto:product});
-        }
+        const search= req.query.search.toLowerCase();
+        let result = products.filter((product)=>product.name.includes(search));
+            res.render('products/products',{productos:result})
+    
     }
 }
 

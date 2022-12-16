@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto+Mono:wght@500&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto+Mono:wght@500&display=swap');
+*{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     color: white;
+    list-style: none;
     font-family: 'Nanum Gothic Coding', monospace;
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 mark{
     color: white;
@@ -25,8 +27,8 @@ border: 0px solid #000000;
 }
 body{
     position: relative;
-    min-height: 100vh;
-    padding-bottom: 10em;
+    padding-bottom: 3em;
+    
 }
 /*Secciones en General*/
 .contenedor{
@@ -38,72 +40,69 @@ body{
     border: 0px solid #000000;
 }
 /*Estilos del Header*/
-header{
-    padding: 0.5em 0em;
+/*primer container chico con las redes y el inicio de sesion*/
+.cuenta{
+   
+    background-color: #54B435;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+.cuenta ul{
+    padding: 5px 1.5em;
+    display: flex;
+}
+.cuenta li{
+    text-align: center;
+    font-size: 15px;
+    margin-left: 1em;
+}
+.enlace:hover{
+    color: #555 !important;
+
+}
+/*---------------------------------------------------------*/
+
+
+/*segundo container conn el logo el buscador y el carrito*/
+.header{
     display: flex;
     color: white;
     width: 100%;
     background-color: #54B435;
+    justify-content: space-between;
 }
+.controlCarrito{
+    width: 20%;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+
 .logo{
+    width: 30%;
     display: flex;
-    margin-left: 2%;
-    width: 40%;
+    padding-left: 1.5em;
     
 }
 .logo img{
     width: 150px;
     height: auto;
 }
-
-.menu{
-    margin-top: 4em;
-    list-style: none;
-    
-}
-.menu li{
-    float: right;
-    font-size: 15px;  
-}
-.sesion{
-    list-style: none;
-    font-size: 11px;
-}
-.sesion li{
-    float: right;
-}
-header nav{
-    width: 60%;
-    margin:0 2%;
-   text-align: right;
-}
-header a {
-    margin-left:1.5em;
-    transition: 200ms;
-}
-header a:hover{
-    text-decoration: underline;
-    color: #555;
-}
 .tituloLogo{
-    display: block;
     margin: 0px;
     padding: 0px;
     color: white;
     text-shadow: 2px 2px #379237;
-    margin-top: 1em;
-}.titulobanner{
-    position: relative;
-    padding: 3em 0em 0em 0em;
-    left: 15%;
-    width: 50%;
+    margin-left: 8px;
 }
 /*Estilos del filtro buscador*/
 .buscar{
+    width: 50%;
     display: flex;
 }
 .buscar form{
-    margin: 0  0 0 10%;
+    margin-top: 2em;
     padding: 0;
     display: flex;
 }
@@ -111,12 +110,11 @@ header a:hover{
     
     margin: 0;
     padding: 0 5px;
- width: 80%;
+ width: 85%;
  height: 25px;
-
- border-radius: 15px 0px 0px 15px;
--moz-border-radius: 15px 0px 0px 15px;
--webkit-border-radius: 15px 0px 0px 15px;
+ border-radius: 5px 0px 0px 5px;
+-moz-border-radius: 5px 0px 0px 5px;
+-webkit-border-radius: 5px 0px 0px 5px;
 border: none;
 }
 .buscar button{
@@ -126,15 +124,51 @@ border: none;
     width: 15%;
     height: 25px;
     background-color: #379237;
-    border-radius: 0px 15px 15px 0px;
--moz-border-radius: 0px 15px 15px 0px;
--webkit-border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 5px 5px 0px;
+-moz-border-radius: 0px 5px 5px 0px;
+-webkit-border-radius: 0px 5px 5px 0px;
 font-size: 20px;
 color: white;
 }
 .buscar button:hover{
     background-color: #333;
 }
+
+/*---------------------------------------------------------*/
+
+/*tercer container con el menu principal*/
+
+nav{
+    background-color: #54B435;
+    width: 100%;
+    text-align: center;
+}
+nav a {
+   
+    
+    transition: 200ms;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: #555;
+}
+.titulobanner{
+    position: relative;
+    padding: 3em 0em 0em 0em;
+    left: 15%;
+    width: 50%;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    margin-left:3em;
+    padding: 5px 0px;
+    font-size: 15px; 
+}
+/*---------------------------------------------------------*/
+
 
 
 
@@ -246,9 +280,7 @@ box-shadow: 10px 10px 90px 35px rgba(217,95,95,0.6);
     -moz-border-radius: 15px 15px 15px 15px;
     -webkit-border-radius: 15px 15px 15px 15px;
 }
-.formulario ul{
-    list-style: none;
-}
+
 .formulario textarea,input,button{
     color: #333;
     font-size: 1.5em;
@@ -286,24 +318,10 @@ footer{
 
 }
 footer p{
-    font-size: 1em;
+    font-size: 15px;
     color: white;
 }
-.social ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-.social ul li{
-    margin: 0px 1em;
-}
-.social a{
-    font-size: 3em;
-    transition: 0.5s;
-}
-.social span:hover{
-    color: #333;
-}
+
 /*Estilos de las cajas principales*/
 .caja{
     padding: 1.5em 0em;

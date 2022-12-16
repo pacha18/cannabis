@@ -1,8 +1,8 @@
 <!--Head-->
-<%- include("partials/head") %>
+<%- include("../partials/head") %>
 <body>
     <!--Header-->
-    <%- include("partials/header") %>
+    <%- include("../partials/header") %>
     <h1>Dettale del Producto: <%=producto.name%></h1>
 <section class="detalle">
     <div class="detalleDerecha">
@@ -15,11 +15,12 @@
         <h2>Precio:</h2>
         <h2 class="precio">$<%= producto.price%> </h2>
         <br>
+        <a href="#">Comprar Ahora</a><br><br>
         <a href="#">Agregar Al Carrito</a>
         <a href="/products/edit/<%= producto.id%>">Editar Producto</a>
     </div>
 </section>
 <!--Footer-->
-<%- include("partials/footer") %>
+<%- include("../partials/footer") %>
 </body>
 </html>

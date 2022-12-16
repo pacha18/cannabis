@@ -6,6 +6,6 @@ router.get('/',controller.products);
 router.get('/detail/:id',controller.detail);
 router.get('/edit/:id',controller.edit);
 router.get('/add',controller.add);
-router.get('/filter/:name',controller.filter);
+router.get('/filter',controller.filter);
 
 module.exports = router;

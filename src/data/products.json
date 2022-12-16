@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Gorra",
+    "name": "gorra",
     "brand": "KYA",
     "price": 899,
     "description": "Gorra KYA color roja",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "Gorra",
+    "name": "gorra",
     "brand": "KYA",
     "price": 899,
     "description": "Gorra KYA camuflada",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "name": "Pipa",
+    "name": "pipa",
     "brand": "Artesanal",
     "price": 299,
     "description": "pipa de madera artesanales",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "name": "Pipa",
+    "name": "pipa",
     "brand": "Artesanal",
     "price": 799,
     "description": "pipa de manera artesanales",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "name": "Remera",
+    "name": "remera",
     "brand": "KYA",
     "price":1499,
     "description": "Remeras marca KYA diferentes colores",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "name": "Cenicero",
+    "name": "cenicero",
     "brand": "cannabis libre",
     "price": 599,
     "description": "Cenicero artesanal diferentes colores",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "name": "Habano",
+    "name": "habano",
     "brand": "Habanos CUBA",
     "price":299,
     "description": "Habanos diferentes sabores con pico de madera",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "name": "Vaper",
+    "name": "vaper",
     "brand": "GPen",
     "price":16789,
     "description": "Vaper con 2 resistencias de regalo",
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "name": "Vaper",
+    "name": "vaper",
     "brand": "SKY",
     "price":11999,
     "description": "Vaper Sky SOLO PLUS para liquidos con 2 resistencias de regalo",
