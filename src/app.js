@@ -1,7 +1,7 @@
 const express = require ('express');
 const app= express();
-const path = require('path')
-
+const path = require('path');
+const dbConnect = require("./config/mongo");
 /*configuracion del motor de vistas */
 app.set('view engine','ejs');
 app.set('views', path.resolve(__dirname,'./views'));
@@ -25,7 +25,7 @@ app.use((req,res,next)=>{
 
 
 
-
+dbConnect();
 
 /*levantar el servidor */
-app.listen(3000,() => console.log('servidor anda!!!'))
+app.listen(3000,() => console.log('servidor anda!!!'));

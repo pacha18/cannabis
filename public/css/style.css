@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@500&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     color: white;
     list-style: none;
-    font-family: 'Nanum Gothic Coding', monospace;
     font-family: 'Roboto Mono', monospace;
 }
 mark{
@@ -68,6 +68,7 @@ body{
 /*segundo container conn el logo el buscador y el carrito*/
 .header{
     display: flex;
+    flex-wrap: wrap;
     color: white;
     width: 100%;
     background-color: #54B435;
@@ -92,13 +93,15 @@ body{
 .tituloLogo{
     margin: 0px;
     padding: 0px;
+    margin-top: 0.5em;
     color: white;
     text-shadow: 2px 2px #379237;
     margin-left: 8px;
+    font-family: 'Pacifico', cursive;
 }
 /*Estilos del filtro buscador*/
 .buscar{
-    width: 50%;
+    width: 45%;
     display: flex;
 }
 .buscar form{
