@@ -7,7 +7,8 @@ app.set('view engine','ejs');
 app.set('views', path.resolve(__dirname,'./views'));
 /*disponibilizamos las carpeta public de manera publica para poder acceder por cualquier views */
 app.use(express.static(path.resolve(__dirname,'../public')));
-
+/*COnfiguracion para poder leer lo que viene por POST*/ 
+app.use(express.urlencoded({extended:true}));
 /*Sistemas de Rutas Propias*/
 const main = require('./routes/main');
 app.use('/',main);

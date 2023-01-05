@@ -178,7 +178,7 @@ nav a:hover{
 /*Estilos de inicio*/
 .fondo{
     position: relative;
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../images/fondo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -8,15 +8,15 @@
 
     
     <div class="form">
-    <form action="" class="formulario">
+    <form action="/products/create" class="formulario" method="POST" enctype="multipart/form-data">
         <ul>
-            <li><input type="text" required placeholder="id" value="<%= id+1%>" readonly></li>
-            <li><input type="text" required placeholder="Nombre del Producto"></li>
-            <li><input type="text" required placeholder="Marca"></li>
-            <li><input type="text" required placeholder="Precio"></li>
-            <li><textarea name="" id="" cols="30" rows="10" placeholder="Descripcion"></textarea></li>
+            <li><input type="text" required placeholder="Nombre del Producto" id="name" name="name"></li>
+            <li><input type="text" required placeholder="Marca" id="brand" name="brand"></li>
+            <li><input type="text" required placeholder="Precio" id="price" name="price"></li>
+            <li><textarea name="" id="" cols="30" rows="10" placeholder="Descripcion" id="description" name="description"></textarea></li>
             <h3 style="color: azure;">subir imagen</h3>
-            <li><input type="file" required name="Subir imagen"></li>
+            <li>
+                <input type="file" required name="image" id="image"></li>
             <li><button type="submit" value="Submit">Agregar Producto</button></li>
         </ul>
     </form>

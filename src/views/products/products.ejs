@@ -8,12 +8,12 @@
 <section class="caja">
         
     <% productos.forEach(element => {%>
-        <div> <img src="/img/productos/<%=element.image%>" alt="" title="">
+        <div> <img src="/images/productos/<%=element.image%>" alt="" title="">
         
             <h3><%=element.name%></h3>
             <p>
                 $<%=element.price%><br>
-            <a href="/products/detail/<%= element.id%>" class="masDetalles">Mas detalles</a><br><br>
+            <a href="/products/detail/<%= element._id%>" class="masDetalles">Mas detalles</a><br><br>
             <a href="#" class="carrito">Agregar al Carrito</a>
         </p>
             
