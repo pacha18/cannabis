@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416d9"
+  },
+  "name": "sustrado de raiz",
+  "brand": "Raíces",
+  "price": 1299,
+  "description": "sustrado de raiz para tener un florecimineto mas rapido y abundante!!",
+  "image": "raices.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416da"
+  },
+  "name": "gorra",
+  "brand": "KYA",
+  "price": 899,
+  "description": "Gorra KYA color roja",
+  "image": "gorra1.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416db"
+  },
+  "name": "gorra",
+  "brand": "KYA",
+  "price": 899,
+  "description": "Gorra KYA camuflada",
+  "image": "gorra2.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416dc"
+  },
+  "name": "pica pica",
+  "brand": "cannabis libre",
+  "price": 990,
+  "description": "Pica pica con motivo de pokemon!!",
+  "image": "picapica-pokemon.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416dd"
+  },
+  "name": "pica pica",
+  "brand": "cannabis libre",
+  "price": 1290,
+  "description": "pica pica de metal inoxidable motivos varios",
+  "image": "picapica-metal.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416de"
+  },
+  "name": "pipa",
+  "brand": "Artesanal",
+  "price": 299,
+  "description": "pipa de madera artesanales",
+  "image": "pipa1.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416df"
+  },
+  "name": "pipa",
+  "brand": "Artesanal",
+  "price": 799,
+  "description": "pipa de manera artesanales",
+  "image": "pipa2.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416e0"
+  },
+  "name": "remera",
+  "brand": "KYA",
+  "price": 1499,
+  "description": "Remeras marca KYA diferentes colores",
+  "image": "remera.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416e1"
+  },
+  "name": "cenicero",
+  "brand": "cannabis libre",
+  "price": 599,
+  "description": "Cenicero artesanal diferentes colores",
+  "image": "cenicero.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416e2"
+  },
+  "name": "habano",
+  "brand": "Habanos CUBA",
+  "price": 299,
+  "description": "Habanos diferentes sabores con pico de madera",
+  "image": "Habano.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416e3"
+  },
+  "name": "vaper",
+  "brand": "GPen",
+  "price": 16789,
+  "description": "Vaper con 2 resistencias de regalo",
+  "image": "vaper.jpg"
+},{
+  "_id": {
+    "$oid": "63b589ed27a920e9af4416e4"
+  },
+  "name": "vaper",
+  "brand": "SKY",
+  "price": 11999,
+  "description": "Vaper Sky SOLO PLUS para liquidos con 2 resistencias de regalo",
+  "image": "vaper2.jpg"
+}]

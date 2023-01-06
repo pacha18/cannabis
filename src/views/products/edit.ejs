@@ -7,15 +7,14 @@
 
     <h1>Editar Producto</h1>
     <div class="form">
-    <form action="" class="formulario">
+    <form action="/products/edit/<%= producto.id %>" class="formulario" method="post" >
         <ul>
             
-            <li><h3 style="color: azure;">nombre del producto</h3><input type="text" required placeholder="Nombre del Producto" value="<%= producto.name %>"></li>
-            <li><h3 style="color: azure;">Marca</h3><input type="text" required placeholder="Marca" value="<%= producto.brand%>"></li>
-            <li><h3 style="color: azure;">Precio</h3><input type="text" required placeholder="Precio"value="<%= producto.price%>"></li>
-            <li><h3 style="color: azure;">Descripcion</h3><textarea name="" id="" cols="30" rows="10" placeholder="Descripcion" ><%= producto.description%></textarea></li>
+            <li><h3 style="color: azure;">nombre del producto</h3><input type="text" name="name" id="name" required placeholder="Nombre del Producto" value="<%= producto.name %>"></li>
+            <li><h3 style="color: azure;">Marca</h3><input type="text" name="brand" id="brand" required placeholder="Marca" value="<%= producto.brand%>"></li>
+            <li><h3 style="color: azure;">Precio</h3><input type="text" name="price" id="price" required placeholder="Precio"value="<%= producto.price%>"></li>
+            <li><h3 style="color: azure;">Descripcion</h3><textarea name="description" id="description" cols="30" rows="10" placeholder="Descripcion" ><%= producto.description%></textarea></li>
             
-            <li><h3 style="color: azure;">subir imagen</h3><input type="file" required></li>
             <li><button type="submit" value="Submit">Editar Producto</button></li>
             <li><button type="button" >Cancelar</button></li>
         </ul>

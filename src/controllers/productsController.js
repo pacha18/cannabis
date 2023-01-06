@@ -33,20 +33,41 @@ let productsController = {
        
         res.render('products/add');
     },
-    store:(req,res)=>{
-        const newProduct = {
-            ...req.body,
-            price:Number(req.body.price),
-            image:req.file.filename,
+    store: async (req,res)=>{
+        if(!req.file){
+            res.render("404");
+        }else{
+            
+           await Product.create({...req.body, image: req.file.filename});
+
+           const products = await Product.find()
+           res.render('products/products',{productos:products})
         }
-        return res.send("viniste por post");
+        },
+    update:async (req,res,next)=>{
+        
+        const product = await Product.findById(req.params.id);
+        
+       await Product.findByIdAndUpdate({_id:req.params.id},
+        {
+            name:req.body.name,
+            brand:req.body.brand,
+            price:req.body.price,
+            description:req.body.description,
+           
+        },);
+            
+        const products = await Product.find()
+        res.render('products/products',{productos:products})
     },
-    filter:(req,res)=>{
-        const search= req.query.search.toLowerCase();
-        let result = products.filter((product)=>product.name.includes(search));
-            res.render('products/products',{productos:result})
+    delete: async(req,res)=>{  
+
+        await Product.findOneAndRemove({_id:req.params.id}
+            );
+        const products = await Product.find()
+        res.render('products/products',{productos:products})
+    },
     
-    }
 }
 
 
